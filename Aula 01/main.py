@@ -20,7 +20,7 @@ pyautogui.PAUSE = 1
 
 # Passo 1: Acessar o sistema da empresa
 
-pyautogui.click(x=1697, y=18)
+pyautogui.hotkey('alt', 'tab')
 pyautogui.hotkey('ctrl', 't')
 pyautogui.write('https://pages.hashtagtreinamentos.com/aula1-intensivao-sistema')
 pyautogui.press(keys='enter')
@@ -39,6 +39,7 @@ SLEEP(5)
 
 pyautogui.click(x=1372, y=428, button='right')
 pyautogui.click(x=1422, y=901)
+pyautogui.click(x=821, y=65)
 
 
 # Passo 4: Calcular os indicadores
@@ -52,6 +53,13 @@ result = calculator()
 
 # Passo 5: Enviar o email para a diretoria/para o chefe
 
-send_message('Estou enviando uma analise de dados feita por uma automação \n{}'.format(result))
+send_message('Estou enviando uma analise de dados feita por uma automação')
+pyautogui.write('Total Gasto: {}'.format(result['total_gasto']))
+pyautogui.hotkey('shift', 'enter')
+pyautogui.write('Quantidade: {}'.format(result['quantidade']))
+pyautogui.hotkey('shift', 'enter')
+pyautogui.write('Preco Medio: {}'.format(result['preco_medio']))
+pyautogui.hotkey('shift', 'enter')
+pyautogui.press('enter')
 
-
+print('Concluido com sucesso!')
