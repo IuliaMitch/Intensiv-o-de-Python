@@ -4,10 +4,11 @@ from sleep import SLEEP
 
 pyautogui.PAUSE = 1
 
-def send_message(message):
+def send_message():
     # Entrar no whatsapp web
     pyautogui.click(x=821, y=65)
-
+    SLEEP(1)
+    pyautogui.click(x=821, y=65)    
     pyautogui.hotkey('ctrl', 't')
     pyautogui.write('https://web.whatsapp.com')
     pyautogui.press('enter')
@@ -23,6 +24,6 @@ def send_message(message):
     pyautogui.press('enter')
     # Escrever a mensagem 
 
-    pyautogui.write('{}'.format(message))
+    pyautogui.hotkey('ctrl', 'v')
     # Enviar
     pyautogui.press('enter')
