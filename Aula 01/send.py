@@ -15,7 +15,7 @@ def send_message(message):
 
     # Clicar na opção de pesquisar contato e pesquisar
     pyautogui.click(x=430, y=256)
-    pyautogui.write('Dede')
+    pyautogui.write('Vitoo')
 
     # Clicar no contato
     # Clicar no chat

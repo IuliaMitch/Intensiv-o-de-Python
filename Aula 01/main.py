@@ -52,7 +52,7 @@ result = calculator()
 
 # Passo 5: Enviar o email para a diretoria/para o chefe
 
-send_message('Estou enviando uma analise de dados feita por uma automação')
+send_message('Estou enviando uma analise de dados feita por uma automacao')
 pyautogui.write('Total Gasto: {}'.format(result['total_gasto']))
 pyautogui.hotkey('shift', 'enter')
 pyautogui.write('Quantidade: {}'.format(result['quantidade']))
