@@ -6,7 +6,8 @@ pyautogui.PAUSE = 1
 
 def send_message(message):
     # Entrar no whatsapp web
-    #pyautogui.click(x=1777, y=20)
+    pyautogui.click(x=821, y=65)
+
     pyautogui.hotkey('ctrl', 't')
     pyautogui.write('https://web.whatsapp.com')
     pyautogui.press('enter')

@@ -39,7 +39,6 @@ SLEEP(5)
 
 pyautogui.click(x=1372, y=428, button='right')
 pyautogui.click(x=1422, y=901)
-pyautogui.click(x=821, y=65)
 
 
 # Passo 4: Calcular os indicadores
