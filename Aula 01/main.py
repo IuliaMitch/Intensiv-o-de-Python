@@ -42,6 +42,12 @@ pyautogui.click(x=1422, y=901)
 
 # Passo 4: Calcular os indicadores
 
+#pip install pandas
+#pip install openpyxl
+#pip install numpy
+
+
+
 # Passo 5: Enviar o email para a diretoria/para o chefe
 
 
