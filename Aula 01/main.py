@@ -4,12 +4,12 @@
 # https://pages.hashtagtreinamentos.com/aula1-intensivao-sistema
 import pyautogui 
 from calculate import calculator
+from sleep import SLEEP
+from send import send_message 
 
 pyautogui.PAUSE = 1
 #print(pyautogui.__file__)
-def SLEEP(self):
-    print('Aguardando web...')
-    pyautogui.sleep(self)
+
 
 # 1696, 18
 #pyautogui.click => clicar com o mouse
@@ -51,5 +51,7 @@ result = calculator()
 
 
 # Passo 5: Enviar o email para a diretoria/para o chefe
+
+send_message('Estou enviando uma analise de dados feita por uma automação \n{}'.format(result))
 
 
