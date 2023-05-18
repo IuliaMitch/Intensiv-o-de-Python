@@ -3,6 +3,7 @@
 
 # https://pages.hashtagtreinamentos.com/aula1-intensivao-sistema
 import pyautogui 
+from calculate import calculator
 
 pyautogui.PAUSE = 1
 #print(pyautogui.__file__)
@@ -46,6 +47,7 @@ pyautogui.click(x=1422, y=901)
 #pip install openpyxl
 #pip install numpy
 
+result = calculator()
 
 
 # Passo 5: Enviar o email para a diretoria/para o chefe
